@@ -20,7 +20,7 @@
         <p id="money-minus" class="money minus">- R$ 0.00</p>
       </div>
 
-      <h2>Transações</h2>
+      <h2 class="titulo">Transações</h2>
 
       <ul id="transacions" clas="transactions">
         <li>Coffe</li>
@@ -28,20 +28,22 @@
         <li>Milk</li>
       </ul>
 
-      <h3>Adicionar transação</h3>
+      <h3 class="titulo">Adicionar transação</h3>
 
-      <form>
-        <div>
+      <form id= "form">
+        <div class="form-control">
           <label for="text">Nome</label>
-          <input type="text" />
+          <input autofocus type="text" id="text" placeholder="Nome da transação"/>
         </div>
 
-        <div>
-          <label for="text">Valor</label>
-          <input type="text" />
+        <div class="form-control">
+          <label for="amount">Valor<br/>
+          <small>(negativo - despesas, positivo - receitas)</small>
+          </label>
+          <input type="number" id="amount" placeholder="Valor da transação"/>
         </div>
 
-        <button>Adicionar</button>
+        <button class= "btn">Adicionar</button>
       </form>
     </div>
   </body>
